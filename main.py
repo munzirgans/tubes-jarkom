@@ -40,7 +40,7 @@ def handler(server, addr):
                         restricted_status = True
                         break
                 for j in range(0, len(allowable_extension)):
-                    if allowable_extension[i] in path:
+                    if allowable_extension[j] in path:
                         allowable_status = True
                         break
                 if restricted_status:
