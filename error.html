@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas JARKOM Kelompok 11</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="/server_file/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="/server_file/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/server_file/lib/animate/animate.min.css" rel="stylesheet">
+    <!-- <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet"> -->
+    <link href="/server_file/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/server_file/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="/server_file/css/style.css" rel="stylesheet">
+    <style>
+        ::placeholder{
+            color:#d0d0d0 !important;
+        }
+        input{
+            color:white !important;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="intro">
+        <div class="intro-container">
+          <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+    
+            <ol class="carousel-indicators"></ol>
+    
+            <div class="carousel-inner" role="listbox">
+    
+              <div class="carousel-item active">
+                <div class="carousel-background"><img src="/server_file/img/background-2.jpg" alt=""></div>
+                <div class="carousel-container">
+                  <div class="carousel-content">
+                    <h2 class="mb-1 text-danger">{{status}}</h2>
+                    <p>{{msg}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+    
+            
+          </div>
+        </div>
+      </section>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <script>
+        $("#search").hover(function(){
+            $(this).css("cursor", "pointer");
+        })
+        $("#search").click(function(){
+            let query = $("#query").val();
+            window.location.href = query;
+        })
+      </script>
+</body>
+</html>
